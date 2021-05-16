@@ -1,22 +1,5 @@
-/*=================================================
-* FileName: OceanManager.cpp
-* 
-* Created by: DotCam
-* Project name: OceanProject
-* Unreal Engine version: 4.18.3
-* Created on: 2015/03/05
-*
-* Last Edited on: 2018/03/15
-* Last Edited by: Felipe "Zoc" Silveira
-* 
-* -------------------------------------------------
-* For parts referencing UE4 code, the following copyright applies:
-* Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
-*
-* Feel free to use this software in any commercial/free game.
-* Selling this as a plugin/item, in whole or part, is not allowed.
-* See "OceanProject\License.md" for full licensing details.
-* =================================================*/
+// For copyright see LICENSE in EnvironmentProject root dir, or:
+//https://github.com/UE4-OceanProject/OceanProject/blob/Master-Environment-Project/LICENSE
 
 #include "OceanManager.h"
 #include <Engine/World.h>
@@ -113,16 +96,20 @@ void AOceanManager::LoadLandscapeHeightmap(UTexture2D* Tex2D)
 
 	HeightmapPixels.Empty();
 
-	FColor* FormatedImageData = static_cast<FColor*>(Tex2D->PlatformData->Mips[0].BulkData.Lock(LOCK_READ_ONLY));
+	FColor* FormatedImageData = reinterpret_cast<FColor*>(Tex2D->PlatformData->Mips[0].BulkData.Lock(LOCK_READ_ONLY));
 
 // 	HeightmapPixels.SetNum(HeightmapWidth * HeightmapHeight);
 // 	uint8* ArrayData = (uint8 *)HeightmapPixels.GetData();
 // 	FMemory::Memcpy(ArrayData, FormatedImageData, GPixelFormats[Tex2D->GetPixelFormat()].BlockBytes * HeightmapWidth * HeightmapHeight);
 
-	for (int i = 0; i < HeightmapWidth * HeightmapHeight; i++)
+	if (FormatedImageData)
 	{
-		HeightmapPixels.Add(FLinearColor(FormatedImageData[i]));
+		for (int i = 0; i < HeightmapWidth * HeightmapHeight; i++)
+		{
+			HeightmapPixels.Add(FLinearColor(FormatedImageData[i]));
+		}
 	}
+	
 	Tex2D->PlatformData->Mips[0].BulkData.Unlock();
 
 // 	UE_LOG(LogTemp, Warning, TEXT("num = %d"), HeightmapPixels.Num());
