@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.27",
+	"EngineAssociation": "5.1",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -58,12 +58,12 @@
 		},
 		{
 			"Name": "AdvancedFlockSystem",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/4e0c3b65a03046a290403b326dbb3428"
 		},
 		{
 			"Name": "FlyingNavSystem",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/65b9b3247c5c458dbb6de81c79cdc8f0"
 		}
 	],
