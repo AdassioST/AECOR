@@ -54,7 +54,7 @@
 		},
 		{
 			"Name": "AdvancedFlockSystem",
-			"Enabled": false,
+			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/4e0c3b65a03046a290403b326dbb3428"
 		},
 		{
@@ -70,14 +70,6 @@
 				"Mac",
 				"Linux"
 			]
-		},
-		{
-			"Name": "Anima4DUnrealPlugin",
-			"Enabled": true
-		},
-		{
-			"Name": "UEAnimaLoader",
-			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
