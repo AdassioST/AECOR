@@ -70,6 +70,18 @@
 				"Mac",
 				"Linux"
 			]
+		},
+		{
+			"Name": "Anima4DUnrealPlugin",
+			"Enabled": true
+		},
+		{
+			"Name": "UEAnimaLoader",
+			"Enabled": true
+		},
+		{
+			"Name": "MoviePipelineMaskRenderPass",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
