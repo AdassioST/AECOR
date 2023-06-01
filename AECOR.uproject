@@ -53,6 +53,16 @@
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/daf26df8b4c94149900ea0dd0a264071"
 		},
 		{
+			"Name": "AdvancedFlockSystem",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/4e0c3b65a03046a290403b326dbb3428"
+		},
+		{
+			"Name": "FlyingNavSystem",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/65b9b3247c5c458dbb6de81c79cdc8f0"
+		},
+		{
 			"Name": "USDImporter",
 			"Enabled": true,
 			"SupportedTargetPlatforms": [
@@ -60,14 +70,6 @@
 				"Mac",
 				"Linux"
 			]
-		},
-		{
-			"Name": "UEAnimaLoader",
-			"Enabled": true
-		},
-		{
-			"Name": "Anima4DUnrealPlugin",
-			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
