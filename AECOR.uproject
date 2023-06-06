@@ -74,6 +74,14 @@
 		{
 			"Name": "MoviePipelineMaskRenderPass",
 			"Enabled": true
+		},
+		{
+			"Name": "Anima4DUnrealPlugin",
+			"Enabled": true
+		},
+		{
+			"Name": "UEAnimaLoader",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
