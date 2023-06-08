@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.1",
+	"EngineAssociation": "5.2",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -59,7 +59,7 @@
 		},
 		{
 			"Name": "FlyingNavSystem",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/65b9b3247c5c458dbb6de81c79cdc8f0"
 		},
 		{
@@ -76,12 +76,8 @@
 			"Enabled": true
 		},
 		{
-			"Name": "Anima4DUnrealPlugin",
-			"Enabled": true
-		},
-		{
-			"Name": "UEAnimaLoader",
-			"Enabled": true
+			"Name": "UESVON",
+			"Enabled": false
 		}
 	],
 	"TargetPlatforms": [
