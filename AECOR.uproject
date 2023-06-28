@@ -78,6 +78,10 @@
 		{
 			"Name": "UESVON",
 			"Enabled": false
+		},
+		{
+			"Name": "HDRIBackdrop",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
